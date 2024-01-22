@@ -1,6 +1,6 @@
 package com.islamzada.entities
 
-data class DataX(
+data class Data(
     val airlines: List<Airline>,
     val airports: List<Airport>,
     val baggages: List<Int>,

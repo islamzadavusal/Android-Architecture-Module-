@@ -16,6 +16,10 @@ android {
         consumerProguardFiles("consumer-rules.pro")
     }
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -41,6 +45,9 @@ dependencies {
     implementation(Libs.navFragment)
     implementation(Libs.hilt)
     kapt(Libs.hiltKapt)
+
+    implementation(project(":entities"))
+    implementation(project(":data"))
 
 
     implementation("androidx.core:core-ktx:1.12.0")
