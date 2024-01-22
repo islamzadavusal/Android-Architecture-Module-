@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id(Plugins.jetbrainsKotlin)
     id(Plugins.kotlinKapt)
+    id(Plugins.hilt)
 }
 
 android {
@@ -34,6 +35,18 @@ android {
 }
 
 dependencies {
+
+    implementation(project(":entities"))
+
+    implementation(Libs.hilt)
+    kapt(Libs.hiltKapt)
+
+    implementation(Libs.Api.retrofit)
+    implementation(Libs.Api.retrofitGson)
+    implementation(Libs.Api.okhttp)
+    implementation(Libs.Api.okhttpLogging)
+    implementation(Libs.Api.gson)
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
