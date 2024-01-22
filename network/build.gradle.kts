@@ -38,8 +38,8 @@ dependencies {
 
     implementation(project(":entities"))
 
-    implementation(Libs.hilt)
-    kapt(Libs.hiltKapt)
+    implementation(Libs.HILT.hilt)
+    kapt(Libs.HILT.hiltKapt)
 
     implementation(Libs.Api.retrofit)
     implementation(Libs.Api.retrofitGson)

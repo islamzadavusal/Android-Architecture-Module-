@@ -41,10 +41,10 @@ android {
 dependencies {
 
     implementation(Libs.UI.material)
-    implementation(Libs.navUI)
-    implementation(Libs.navFragment)
-    implementation(Libs.hilt)
-    kapt(Libs.hiltKapt)
+    implementation(Libs.NAV.navUI)
+    implementation(Libs.NAV.navFragment)
+    implementation(Libs.HILT.hilt)
+    kapt(Libs.HILT.hiltKapt)
 
     implementation(project(":entities"))
     implementation(project(":data"))

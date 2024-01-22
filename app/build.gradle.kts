@@ -47,10 +47,10 @@ dependencies {
     implementation(project(":features:flights"))
 
     implementation(Libs.UI.material)
-    implementation(Libs.navUI)
-    implementation(Libs.navFragment)
-    implementation(Libs.hilt)
-    kapt(Libs.hiltKapt)
+    implementation(Libs.NAV.navUI)
+    implementation(Libs.NAV.navFragment)
+    implementation(Libs.HILT.hilt)
+    kapt(Libs.HILT.hiltKapt)
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

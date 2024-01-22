@@ -18,12 +18,16 @@ object Libs {
 
     }
 
-    const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
-    const val hiltKapt = "com.google.dagger:hilt-compiler:${Versions.hilt}"
+    object HILT {
+        const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
+        const val hiltKapt = "com.google.dagger:hilt-compiler:${Versions.hilt}"
+    }
 
-    const val navUI = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
-    const val navFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
-
+    object NAV {
+        const val navUI = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+        const val navFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    }
+    
     object Api {
         const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
         const val retrofitGson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
