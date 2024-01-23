@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id(Plugins.jetbrainsKotlin)
     id(Plugins.kotlinKapt)
+    id(Plugins.hilt)
 }
 
 android {
@@ -34,6 +35,13 @@ android {
 }
 
 dependencies {
+
+    implementation(Libs.HILT.hilt)
+    kapt(Libs.HILT.hiltKapt)
+
+    implementation(project(":data"))
+    implementation(project(":common"))
+    implementation(project(":entities"))
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

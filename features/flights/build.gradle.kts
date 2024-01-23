@@ -47,7 +47,10 @@ dependencies {
     kapt(Libs.HILT.hiltKapt)
 
     implementation(project(":entities"))
-    implementation(project(":data"))
+   // implementation(project(":data"))
+    implementation(project(":common"))
+    implementation(project(":domain"))
+
 
 
     implementation("androidx.core:core-ktx:1.12.0")

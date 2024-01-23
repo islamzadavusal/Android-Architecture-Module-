@@ -1,6 +1,6 @@
 package com.islamzada.data.repository
 
-import com.islamzada.entities.SearchResponse
+import com.islamzada.entities.model.SearchResponse
 import com.islamzada.network.api.ApiService
 import javax.inject.Inject
 
