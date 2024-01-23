@@ -44,7 +44,6 @@ class SearchListFragment : Fragment() {
         }
 
         viewModel.data.observe(viewLifecycleOwner) {
-            //notify adapter
         }
 
         lifecycleScope.launch {
