@@ -17,7 +17,7 @@ class SearchListViewModel @Inject constructor(
     val searchUseCase : SearchListUseCase
 ) : ViewModel() {
     val state : MutableStateFlow<State?> = MutableStateFlow(null)
-    val data = MutableLiveData<SearchListUIModel?>()
+    val data = MutableLiveData<FlightSearchUIState?>()
 
     suspend fun getFlights() {
         searchUseCase.getList().collectLatest {
