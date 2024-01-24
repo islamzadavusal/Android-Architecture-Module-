@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.islamzada.entities.uimodel.FlightListUIModel
-import com.islamzada.entities.uimodel.FlightSearchUIState
 import com.islamzada.flights.databinding.ListItemFlightBinding
 
 class SearchListAdapter : RecyclerView.Adapter<SearchListViewHolder>() {
@@ -40,7 +39,7 @@ class SearchListAdapter : RecyclerView.Adapter<SearchListViewHolder>() {
     companion object {
         private val differCallBack = object : DiffUtil.ItemCallback<FlightListUIModel>(){
             override fun areItemsTheSame(oldItem: FlightListUIModel, newItem: FlightListUIModel): Boolean {
-                return oldItem.enuid == newItem.enuid
+                return oldItem.enuId == newItem.enuId
             }
 
             override fun areContentsTheSame(oldItem: FlightListUIModel, newItem: FlightListUIModel): Boolean {
