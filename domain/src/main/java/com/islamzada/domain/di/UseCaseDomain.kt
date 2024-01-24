@@ -12,11 +12,12 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object UseCaseDomain {
-    @Provides
-    @Singleton
-    fun provideSearchUseCase(repositoryInterface: FlightRepositoryInterface, mapper: SearchResponseToUIStateMapper) = SearchListUseCase(repositoryInterface, mapper)
 
 //    @Provides
 //    @Singleton
-//    fun provideSearchUseCase(repositoryInterface: FlightRepositoryInterface) = SearchListUseCase(repositoryInterface)
+//    fun provideSearchUseCase(repositoryInterface: FlightRepositoryInterface, mapper: SearchResponseToUIStateMapper) = SearchListUseCase(repositoryInterface, mapper)
+
+    @Provides
+    @Singleton
+    fun provideSearchUseCase(repositoryInterface: FlightRepositoryInterface) = SearchListUseCase(repositoryInterface)
 }
